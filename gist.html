@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv='Content-type' content='text/html; charset=utf-8'>
+    <title>Gist</title>
+    <!--link rel="stylesheet" href="http://8tracks.com/assets/application.css" /-->
+  </head>
+  <body>
+    <div id="gist">
+      <h1>gist name</h1>
+    </div>
+      
+    <script src="zepto.js"></script>
+    <script src="react.js"></script>
+    <script src="JSXTransformer.js"></script>
+    <script type="text/jsx" src="_jsx_compiled/gist.js"></script>
+  
+    <script type="text/jsx">
+      React.render(
+        <UserGist source="https://api.github.com/users/octocat/gists" />,
+        document.getElementById('gist')
+      );
+    </script>
+
+  </body>
+</html>

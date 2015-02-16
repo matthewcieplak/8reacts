@@ -1,0 +1,1 @@
+./node_modules/.bin/jsx -w _jsx _jsx_compiled
